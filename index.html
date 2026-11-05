@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Neonest Infotech | Web, Mobile App &amp; Game Development Company</title>
+  <meta name="google-site-verification" content="l4mpWVwLWg4cVHwNXIuhmtS4ProIyDiEzKYhIE4QNR8" />
+  <meta name="description"
+    content="Neonest Infotech builds Android & iOS apps, websites, e-commerce stores, Unity games and UI/UX for clients worldwide. Ideate, build and launch with us.">
+  <meta name="keywords"
+    content="app development company, web development, iOS, Android, Unity game development, UI/UX design, e-commerce, digital marketing, app publishing, India">
+
+  <!-- Favicons -->
+  <link href="assets/img/rbglogo.png" rel="icon">
+  <link href="assets/img/logo.jpg" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/theme.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/neonest-logo-640.png" srcset="assets/img/neonest-logo-640.png 640w, assets/img/neonest-logo.png 2125w" sizes="240px" width="640" height="171" alt="Neonest Infotech">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a href="#contact" class="header-cta d-none d-sm-inline-flex">Get a Quote <i class="bi bi-arrow-right"></i></a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="hero-bg" aria-hidden="true">
+        <canvas id="hero-canvas"></canvas>
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
+      </div>
+
+      <div class="container">
+        <div class="row align-items-center gy-5">
+
+          <div class="col-lg-6 hero-text">
+            <span class="eyebrow" data-aos="fade-up"><i class="bi bi-globe2"></i> Serving clients worldwide</span>
+            <h1 data-aos="fade-up" data-aos-delay="100">We build digital products that <span class="text-gradient">grow your
+                business</span></h1>
+            <p class="lead" data-aos="fade-up" data-aos-delay="200">Neonest Infotech designs and develops mobile apps,
+              websites, e-commerce stores and Unity games — from the first idea to launch on the App Store and Google
+              Play.</p>
+            <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+              <a href="#contact" class="btn-primary-x">Start Your Project <i class="bi bi-arrow-right"></i></a>
+              <a href="#portfolio" class="btn-outline-x">View Our Work</a>
+            </div>
+            <div class="hero-trust" data-aos="fade-up" data-aos-delay="400">
+              <div><strong>30+</strong><span>Happy Clients</span></div>
+              <div><strong>125+</strong><span>Projects Delivered</span></div>
+              <div><strong>1500+</strong><span>Support Hours</span></div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="orbit-scene" id="orbit-scene" aria-label="Our skills">
+              <div class="orbit-stage">
+                <svg class="orbit-links" id="orbit-links" aria-hidden="true">
+                  <defs>
+                    <radialGradient id="hub-glow">
+                      <stop offset="0" stop-color="#22b8e6" stop-opacity="0.22" />
+                      <stop offset="1" stop-color="#22b8e6" stop-opacity="0" />
+                    </radialGradient>
+                  </defs>
+                  <circle class="hub-glow" fill="url(#hub-glow)" />
+                  <circle class="ring ring-outer" />
+                  <circle class="ring ring-base" />
+                  <circle class="ring ring-streak" />
+                  <circle class="ring ring-inner" />
+                  <g class="links"></g>
+                  <g class="pulses"></g>
+                </svg>
+
+                <div class="logo-core">
+                  <img src="assets/img/neonest-logo-640.png" srcset="assets/img/neonest-logo-640.png 640w, assets/img/neonest-logo.png 2125w" sizes="240px" width="640" height="171" alt="Neonest Infotech">
+                </div>
+
+                <div class="orbit-item"><span class="chip" style="--c:#3ddc84"><i class="bi bi-android2"></i></span><small>Android</small></div>
+                <div class="orbit-item"><span class="chip" style="--c:#111827"><i class="bi bi-apple"></i></span><small>iOS</small></div>
+                <div class="orbit-item"><span class="chip" style="--c:#2b5ea8"><i class="bi bi-code-slash"></i></span><small>Web</small></div>
+                <div class="orbit-item"><span class="chip" style="--c:#e0457b"><i class="bi bi-palette"></i></span><small>UI/UX</small></div>
+                <div class="orbit-item"><span class="chip" style="--c:#f59e0b"><i class="bi bi-cart3"></i></span><small>E-Commerce</small></div>
+                <div class="orbit-item"><span class="chip" style="--c:#8b5cf6"><i class="bi bi-megaphone"></i></span><small>Marketing</small></div>
+                <div class="orbit-item"><span class="chip" style="--c:#0ea5e9"><i class="bi bi-rocket-takeoff"></i></span><small>App Publishing</small></div>
+                <div class="orbit-item"><span class="chip" style="--c:#222c37"><i class="bi bi-unity"></i></span><small>Unity</small></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Process Section -->
+    <section id="process" class="process section">
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="step-card tilt">
+              <div class="step-top"><span class="step-icon"><i class="bi bi-lightbulb"></i></span><span class="step-no">01</span></div>
+              <h4>Ideate</h4>
+              <p>Every project starts with an idea. We turn yours into a clear plan with goals, features and scope.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="step-card tilt">
+              <div class="step-top"><span class="step-icon"><i class="bi bi-diagram-3"></i></span><span class="step-no">02</span></div>
+              <h4>Strategize</h4>
+              <p>After 360° research we define the architecture, design direction and a realistic timeline.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="step-card tilt">
+              <div class="step-top"><span class="step-icon"><i class="bi bi-code-square"></i></span><span class="step-no">03</span></div>
+              <h4>Build</h4>
+              <p>Our designers and developers build in short sprints, sharing progress with you at every step.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="step-card tilt">
+              <div class="step-top"><span class="step-icon"><i class="bi bi-rocket-takeoff"></i></span><span class="step-no">04</span></div>
+              <h4>Launch</h4>
+              <p>After QA sign-off we launch on the web, App Store and Google Play — and support you after.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Process Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+        <div class="row gy-5 align-items-center">
+
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="about-visual">
+              <img src="assets/img/about.png" class="img-fluid" alt="Neonest Infotech team at work">
+              <div class="about-badge">
+                <i class="bi bi-award"></i>
+                <div><strong>Since 2022</strong><span>Trusted software partner</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left">
+            <span class="section-kicker">About Us</span>
+            <h2 class="section-heading">Delivering quality software to businesses worldwide</h2>
+            <p>
+              Neonest Infotech started in 2022 with a small team focused on web design. With a futuristic vision and
+              untiring energy, the company grew quickly — and today our 20+ action-driven team members deliver
+              complete digital solutions for startups and enterprises.
+            </p>
+            <p>
+              We build Android &amp; iOS apps, custom and e-commerce websites, Unity games, custom software and UI/UX
+              design, and we take care of app publishing and digital marketing — almost everything under the hood
+              of computing and communication technology.
+            </p>
+
+            <div class="row g-3 mt-2">
+              <div class="col-6">
+                <div class="stat-card">
+                  <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="2" class="purecounter"></span><b>+</b>
+                  <p>Clients</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat-card">
+                  <span data-purecounter-start="0" data-purecounter-end="125" data-purecounter-duration="2" class="purecounter"></span><b>+</b>
+                  <p>Projects</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat-card">
+                  <span data-purecounter-start="0" data-purecounter-end="1500" data-purecounter-duration="2" class="purecounter"></span><b>+</b>
+                  <p>Hours of Support</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat-card">
+                  <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="2" class="purecounter"></span><b>+</b>
+                  <p>Team Members</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section alt-bg">
+
+      <div class="container">
+        <div class="title-block" data-aos="fade-up">
+          <span class="section-kicker">Our Skills</span>
+          <h2 class="section-heading">Technologies we master</h2>
+          <p>Hands-on expertise across mobile, web, games and growth — all under one roof.</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-card tilt" style="--c:#3ddc84">
+              <span class="chip"><i class="bi bi-android2"></i></span>
+              <h4>Android App Development</h4>
+              <div class="progress-track"><span class="progress-value" data-value="95"></span></div>
+              <em>95%</em>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="skill-card tilt" style="--c:#111827">
+              <span class="chip"><i class="bi bi-apple"></i></span>
+              <h4>iOS App Development</h4>
+              <div class="progress-track"><span class="progress-value" data-value="90"></span></div>
+              <em>90%</em>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-card tilt" style="--c:#2b5ea8">
+              <span class="chip"><i class="bi bi-code-slash"></i></span>
+              <h4>Web Development</h4>
+              <div class="progress-track"><span class="progress-value" data-value="95"></span></div>
+              <em>95%</em>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="skill-card tilt" style="--c:#e0457b">
+              <span class="chip"><i class="bi bi-palette"></i></span>
+              <h4>UI/UX Design</h4>
+              <div class="progress-track"><span class="progress-value" data-value="90"></span></div>
+              <em>90%</em>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-card tilt" style="--c:#f59e0b">
+              <span class="chip"><i class="bi bi-cart3"></i></span>
+              <h4>E-Commerce Solutions</h4>
+              <div class="progress-track"><span class="progress-value" data-value="88"></span></div>
+              <em>88%</em>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="skill-card tilt" style="--c:#8b5cf6">
+              <span class="chip"><i class="bi bi-megaphone"></i></span>
+              <h4>Digital Marketing</h4>
+              <div class="progress-track"><span class="progress-value" data-value="85"></span></div>
+              <em>85%</em>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-card tilt" style="--c:#0ea5e9">
+              <span class="chip"><i class="bi bi-rocket-takeoff"></i></span>
+              <h4>App Publishing</h4>
+              <div class="progress-track"><span class="progress-value" data-value="92"></span></div>
+              <em>92%</em>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="skill-card tilt" style="--c:#222c37">
+              <span class="chip"><i class="bi bi-unity"></i></span>
+              <h4>Unity Game Development</h4>
+              <div class="progress-track"><span class="progress-value" data-value="85"></span></div>
+              <em>85%</em>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <div class="container">
+        <div class="title-block" data-aos="fade-up">
+          <span class="section-kicker">Services</span>
+          <h2 class="section-heading">End-to-end solutions for your business</h2>
+          <p>From the first wireframe to the store listing, we handle every step of your product.</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card tilt" style="--c:#3ddc84">
+              <span class="chip"><i class="bi bi-phone"></i></span>
+              <h3>Mobile App Development</h3>
+              <p>Native and cross-platform Android &amp; iOS apps built for performance, retention and scale.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="service-card tilt" style="--c:#2b5ea8">
+              <span class="chip"><i class="bi bi-code-slash"></i></span>
+              <h3>Web Development</h3>
+              <p>Fast, mobile-first business websites, CMS platforms and web apps with robust backends.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card tilt" style="--c:#e0457b">
+              <span class="chip"><i class="bi bi-palette"></i></span>
+              <h3>UI/UX Design</h3>
+              <p>Clean, attractive interfaces — from colour and typography to flows your users enjoy.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="service-card tilt" style="--c:#f59e0b">
+              <span class="chip"><i class="bi bi-cart3"></i></span>
+              <h3>E-Commerce Solutions</h3>
+              <p>Scalable online stores with seamless checkout, payments and inventory management.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card tilt" style="--c:#8b5cf6">
+              <span class="chip"><i class="bi bi-megaphone"></i></span>
+              <h3>Digital Marketing</h3>
+              <p>SEO, social media and paid campaigns that bring your brand to the right audience.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="service-card tilt" style="--c:#0ea5e9">
+              <span class="chip"><i class="bi bi-rocket-takeoff"></i></span>
+              <h3>App Publishing</h3>
+              <p>We prepare listings, assets and compliance, and publish your app on Google Play and the App Store.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card tilt" style="--c:#222c37">
+              <span class="chip"><i class="bi bi-unity"></i></span>
+              <h3>Unity Game Development</h3>
+              <p>2D and 3D games for mobile and desktop, built with Unity from concept to release.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="service-card tilt" style="--c:#14b8a6">
+              <span class="chip"><i class="bi bi-cpu"></i></span>
+              <h3>Custom Software</h3>
+              <p>Tailored enterprise software and SaaS products that improve efficiency and drive growth.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section alt-bg">
+
+      <div class="container">
+        <div class="title-block" data-aos="fade-up">
+          <span class="section-kicker">Portfolio</span>
+          <h2 class="section-heading">Work we're proud of</h2>
+          <p>See how our solutions have helped businesses across various industries.</p>
+        </div>
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-web">Web</li>
+            <li data-filter=".filter-ui">UI/UX</li>
+          </ul>
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-card">
+                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="Sofi Music App">
+                <div class="portfolio-info"><h4>Sofi Music App</h4><span>App</span>
+                  <a href="assets/img/portfolio/app-1.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+              <div class="portfolio-card">
+                <img src="assets/img/portfolio/ui-1.jpg" class="img-fluid" alt="Bicycle Shopping UI">
+                <div class="portfolio-info"><h4>Bicycle Shopping UI</h4><span>UI/UX</span>
+                  <a href="assets/img/portfolio/ui-1.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-card">
+                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="Live Score App">
+                <div class="portfolio-info"><h4>Live Score App</h4><span>App</span>
+                  <a href="assets/img/portfolio/app-2.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+              <div class="portfolio-card">
+                <img src="assets/img/portfolio/ui-2.jpg" class="img-fluid" alt="All Chart Design">
+                <div class="portfolio-info"><h4>All Chart Design</h4><span>UI/UX</span>
+                  <a href="assets/img/portfolio/ui-2.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+                <img src="assets/img/portfolio/web-2.jpg" class="img-fluid" alt="Fashion E-Commerce">
+                <div class="portfolio-info"><h4>Fashion E-Commerce</h4><span>Web</span>
+                  <a href="assets/img/portfolio/web-2.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-card">
+                <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="Neno Music for App and Web">
+                <div class="portfolio-info"><h4>Neno Music for App &amp; Web</h4><span>App</span>
+                  <a href="assets/img/portfolio/app-3.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+              <div class="portfolio-card">
+                <img src="assets/img/portfolio/ui-3.jpg" class="img-fluid" alt="Financial Dashboard">
+                <div class="portfolio-info"><h4>Financial Dashboard</h4><span>UI/UX</span>
+                  <a href="assets/img/portfolio/ui-3.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+                <img src="assets/img/portfolio/web-3.jpg" class="img-fluid" alt="Virchuality Landing Page">
+                <div class="portfolio-info"><h4>Virchuality Landing Page</h4><span>Web</span>
+                  <a href="assets/img/portfolio/web-3.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-card">
+                <img src="assets/img/portfolio/app-4.jpg" class="img-fluid" alt="AI Image Forge Pro">
+                <div class="portfolio-info"><h4>AI Image Forge Pro</h4><span>App</span>
+                  <a href="assets/img/portfolio/app-4.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+              <div class="portfolio-card">
+                <img src="assets/img/portfolio/ui-4.jpg" class="img-fluid" alt="Aspen Travel App UI">
+                <div class="portfolio-info"><h4>Aspen Travel App UI</h4><span>UI/UX</span>
+                  <a href="assets/img/portfolio/ui-4.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+                <img src="assets/img/portfolio/web-4.jpg" class="img-fluid" alt="Nextcent Landing Page">
+                <div class="portfolio-info"><h4>Nextcent Landing Page</h4><span>Web</span>
+                  <a href="assets/img/portfolio/web-4.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-card">
+                <img src="assets/img/portfolio/app-5.jpg" class="img-fluid" alt="Musium">
+                <div class="portfolio-info"><h4>Musium</h4><span>App</span>
+                  <a href="assets/img/portfolio/app-5.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+              <div class="portfolio-card">
+                <img src="assets/img/portfolio/ui-5.jpg" class="img-fluid" alt="Nector Grocery App UI">
+                <div class="portfolio-info"><h4>Nector Grocery App UI</h4><span>UI/UX</span>
+                  <a href="assets/img/portfolio/ui-5.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+                <img src="assets/img/portfolio/web-5.jpg" class="img-fluid" alt="Dental Landing Page">
+                <div class="portfolio-info"><h4>Dental Landing Page</h4><span>Web</span>
+                  <a href="assets/img/portfolio/web-5.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+                <img src="assets/img/portfolio/web-6.jpg" class="img-fluid" alt="Order.UK Food Web">
+                <div class="portfolio-info"><h4>Order.UK Food Web</h4><span>Web</span>
+                  <a href="assets/img/portfolio/web-6.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+                <img src="assets/img/portfolio/web-7.jpg" class="img-fluid" alt="Sports Product Page">
+                <div class="portfolio-info"><h4>Sports Product Page</h4><span>Web</span>
+                  <a href="assets/img/portfolio/web-7.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+              <div class="portfolio-card">
+                <img src="assets/img/portfolio/ui-6.jpg" class="img-fluid" alt="E-commerce UI Kit">
+                <div class="portfolio-info"><h4>E-commerce UI Kit</h4><span>UI/UX</span>
+                  <a href="assets/img/portfolio/ui-6.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+                <img src="assets/img/portfolio/web-8.jpg" class="img-fluid" alt="Jadoo Travel Web">
+                <div class="portfolio-info"><h4>Jadoo Travel Web</h4><span>Web</span>
+                  <a href="assets/img/portfolio/web-8.jpg" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us section">
+
+      <div class="container">
+        <div class="title-block" data-aos="fade-up">
+          <span class="section-kicker">Why Neonest</span>
+          <h2 class="section-heading">A partner you can rely on, wherever you are</h2>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="why-item"><i class="bi bi-clock-history"></i><h4>Time-Zone Friendly</h4><p>We align meeting hours with your schedule, whether you're in the US, UK, Europe or Australia.</p></div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="why-item"><i class="bi bi-chat-dots"></i><h4>Clear Communication</h4><p>Regular updates, demos and a single point of contact through the whole project.</p></div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="why-item"><i class="bi bi-shield-check"></i><h4>Quality First</h4><p>Code reviews and QA testing on real devices before anything goes live.</p></div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="why-item"><i class="bi bi-headset"></i><h4>Post-Launch Support</h4><p>We stay with you after launch for updates, fixes and new features.</p></div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section alt-bg">
+
+      <div class="container">
+        <div class="title-block" data-aos="fade-up">
+          <span class="section-kicker">Reviews</span>
+          <h2 class="section-heading">What our clients say</h2>
+          <p>Real results, real smiles — see why our clients are thrilled to have chosen us.</p>
+        </div>
+
+        <div class="swiper init-swiper" data-aos="fade-up" data-aos-delay="100">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 24
+                },
+                "992": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 24
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 24
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="review-card">
+                <i class="bi bi-quote quote"></i>
+                <p>We have been working with Neonest Infotech and are pleased with the results so far. It is our first
+                  time hiring external help to grow our website from India and the work provided is of high standard. I
+                  wouldn't hesitate in recommending Neonest Infotech to others.</p>
+                <div class="reviewer">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" alt="">
+                  <div><h3>Saul Goodman</h3><h4>CEO, TD Infotech</h4></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="review-card">
+                <i class="bi bi-quote quote"></i>
+                <p>An affordable, reliable and complete software partner. They designed our complete WMS package with
+                  an online ordering system for our franchises — it drastically cut our workload, and their maintenance
+                  turnaround time is really impressive.</p>
+                <div class="reviewer">
+                  <img src="assets/img/testimonials/testimonials-2.jpg" alt="">
+                  <div><h3>Sara Wilsson</h3><h4>Designer</h4></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="review-card">
+                <i class="bi bi-quote quote"></i>
+                <p>Neonest is a budget- and timeline-oriented team. Their dedicated work ethic and expertise have
+                  resulted in innovative solutions that brim with marketable, customer-oriented potential.</p>
+                <div class="reviewer">
+                  <img src="assets/img/testimonials/testimonials-3.jpg" alt="">
+                  <div><h3>Jena Karlis</h3><h4>RailsCarma</h4></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="review-card">
+                <i class="bi bi-quote quote"></i>
+                <p>The Neonest Infotech team has been doing the job that needs to be done rather than just trying to
+                  make a profit. They have remained engaged and responsive throughout the partnership.</p>
+                <div class="reviewer">
+                  <img src="assets/img/testimonials/testimonials-4.jpg" alt="">
+                  <div><h3>Matt Brandon</h3><h4>Freelancer</h4></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- CTA Section -->
+    <section class="cta section">
+      <div class="container" data-aos="zoom-in">
+        <div class="cta-box">
+          <div>
+            <h2>Have a project in mind?</h2>
+            <p>Tell us about your idea and get a free consultation and estimate within 24 hours.</p>
+          </div>
+          <a href="#contact" class="btn-light-x">Let's Talk <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </section><!-- /CTA Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <div class="container">
+        <div class="title-block" data-aos="fade-up">
+          <span class="section-kicker">Contact</span>
+          <h2 class="section-heading">Let's build something great together</h2>
+          <p>Share your idea with us — we'll get back to you shortly.</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
+            <div class="contact-info">
+              <div class="info-row">
+                <span class="chip"><i class="bi bi-geo-alt"></i></span>
+                <div><h3>Address</h3><p><a href="https://www.google.com/maps/search/?api=1&amp;query=427%2C%20Opera%20Business%20Hub%2C%20Mota%20Varachha%2C%20Surat%20395006%2C%20Gujarat%2C%20India" target="_blank" rel="noopener noreferrer">427, Opera Business Hub, Mota Varachha, Surat 395006, Gujarat, India</a></p></div>
+              </div>
+              <div class="info-row">
+                <span class="chip"><i class="bi bi-telephone"></i></span>
+                <div><h3>Call / WhatsApp</h3><p><a href="tel:+919106825002">+91 91068 25002</a></p></div>
+              </div>
+              <div class="info-row">
+                <span class="chip"><i class="bi bi-envelope"></i></span>
+                <div><h3>Email</h3><p><a href="mailto:neonestinfotech@gmail.com">neonestinfotech@gmail.com</a></p></div>
+              </div>
+              <div class="info-social">
+                <a href="https://www.instagram.com/neonestinfotech?vrfl=eTUzanl1YjZ5dGQ%3D&utm_source=qr" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/neonest-infotech/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+            <form action="forms/contact.php" method="post" class="php-email-form contact-form">
+              <div class="row gy-3">
+
+                <div class="col-md-6">
+                  <label for="name-field">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="phone-field">Phone No</label>
+                  <input type="tel" class="form-control" name="phone" id="phone-field">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="subject-field">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required>
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field">Message</label>
+                  <textarea class="form-control" name="message" rows="6" id="message-field" required></textarea>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <button type="submit">Send Message <i class="bi bi-send"></i></button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="footer-logo"><img src="assets/img/neonest-logo-640.png" srcset="assets/img/neonest-logo-640.png 640w, assets/img/neonest-logo.png 2125w" sizes="240px" width="640" height="171" alt="Neonest Infotech"></a>
+          <p class="mt-3">Mobile apps, websites, games and digital growth for businesses around the world.</p>
+          <div class="info-social mt-3">
+            <a href="https://www.instagram.com/neonestinfotech?vrfl=eTUzanl1YjZ5dGQ%3D&utm_source=qr" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/neonest-infotech/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-6 footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-6 footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Mobile App Development</a></li>
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">UI/UX Design</a></li>
+            <li><a href="#services">Unity Game Development</a></li>
+            <li><a href="#services">App Publishing</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact">
+          <h4>Get in Touch</h4>
+          <p><a href="https://www.google.com/maps/search/?api=1&amp;query=427%2C%20Opera%20Business%20Hub%2C%20Mota%20Varachha%2C%20Surat%20395006%2C%20Gujarat%2C%20India" target="_blank" rel="noopener noreferrer">427, Opera Business Hub, Mota Varachha, Surat 395006, India</a></p>
+          <p><a href="tel:+919106825002">+91 91068 25002</a></p>
+          <p><a href="mailto:neonestinfotech@gmail.com">neonestinfotech@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright">
+      <p>© <span id="year">2026</span> <strong>Neonest Infotech</strong>. All Rights Reserved.</p>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"><img src="assets/img/neonest-logo-640.png" srcset="assets/img/neonest-logo-640.png 640w, assets/img/neonest-logo.png 2125w" sizes="240px" width="640" height="171" alt=""></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

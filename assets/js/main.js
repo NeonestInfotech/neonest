@@ -152,9 +152,27 @@
    */
   function initSwiper() {
     document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
-      let config = JSON.parse(
-        swiperElement.querySelector(".swiper-config").innerHTML.trim()
-      );
+      const configEl = swiperElement.querySelector(".swiper-config");
+      const raw = configEl ? configEl.textContent.trim() : "";
+      let config;
+      try {
+        config = JSON.parse(raw);
+      } catch (err) {
+        try {
+          // Most common breakage: a trailing comma before } or ]
+          config = JSON.parse(raw.replace(/,\s*([}\]])/g, "$1"));
+        } catch (err2) {
+          console.warn("Invalid swiper config, using defaults:", err2.message);
+          config = {
+            loop: true,
+            speed: 600,
+            autoplay: { delay: 5000 },
+            slidesPerView: 1,
+            spaceBetween: 24,
+            pagination: { el: ".swiper-pagination", type: "bullets", clickable: true }
+          };
+        }
+      }
 
       if (swiperElement.classList.contains("swiper-tab")) {
         initSwiperWithCustomPagination(swiperElement, config);

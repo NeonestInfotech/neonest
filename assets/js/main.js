@@ -185,6 +185,7 @@
   });
 
   /**
+<<<<<<< HEAD
    * Animate skill bars when they scroll into view
    */
   const skillBars = document.querySelectorAll('.skills .progress-value');
@@ -487,6 +488,8 @@
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
   /**
+=======
+>>>>>>> d46c4f2c136a9e7861fc8b68b432fc681da96c71
    * Navmenu Scrollspy
    */
   let navmenulinks = document.querySelectorAll('.navmenu a');

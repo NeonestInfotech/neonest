@@ -185,7 +185,6 @@
   });
 
   /**
-<<<<<<< HEAD
    * Animate skill bars when they scroll into view
    */
   const skillBars = document.querySelectorAll('.skills .progress-value');
@@ -266,7 +265,7 @@
     const sizeOrbit = () => {
       const w = orbitScene.clientWidth;
       const h = orbitScene.clientHeight;
-      radius = Math.min(215, Math.min(w, h) * 0.38);
+      radius = Math.min(215, Math.min(w, h) * (w < 576 ? 0.35 : 0.38));
       hubRadius = Math.min(120, radius * 0.56);
       chipRadius = w < 576 ? 23 : 33;
       centerX = w / 2;
@@ -340,8 +339,9 @@
     const ctx = heroCanvas.getContext('2d');
     const globePoints = [];
     const arrows = [];
-    const GLOBE_POINTS = 800;
-    const ARROWS = 16;
+    const isSmallScreen = window.innerWidth < 768;
+    const GLOBE_POINTS = isSmallScreen ? 450 : 800;
+    const ARROWS = isSmallScreen ? 10 : 16;
     let width = 0;
     let height = 0;
     let globeX = 0;
@@ -459,7 +459,12 @@
     };
 
     sizeCanvas();
-    window.addEventListener('resize', sizeCanvas);
+    // Mobile browsers fire resize while the address bar hides/shows on scroll;
+    // only redraw when the hero's size really changed.
+    window.addEventListener('resize', () => {
+      if (hero.clientWidth === width && hero.clientHeight === height) return;
+      sizeCanvas();
+    });
     window.addEventListener('load', sizeCanvas);
 
     if (reduceMotion) {
@@ -488,8 +493,6 @@
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
   /**
-=======
->>>>>>> d46c4f2c136a9e7861fc8b68b432fc681da96c71
    * Navmenu Scrollspy
    */
   let navmenulinks = document.querySelectorAll('.navmenu a');

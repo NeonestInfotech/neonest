@@ -476,7 +476,7 @@ a {
   border: 3px solid transparent;
   background:
     radial-gradient(circle at 35% 30%, #ffffff 0%, #f3f8ff 70%, #e6f0fd 100%) padding-box,
-    conic-gradient(from var(--border-angle), #2b5ea8, #22b8e6, #bfeeff, #ffffff, #2b5ea8) border-box;
+    conic-gradient(from var(--border-angle, 0deg), #2b5ea8, #22b8e6, #bfeeff, #ffffff, #2b5ea8) border-box;
   box-shadow:
     0 30px 60px rgba(16, 42, 92, 0.18),
     0 0 0 12px rgba(255, 255, 255, 0.6),
@@ -1325,6 +1325,433 @@ a {
 @keyframes preloader-pulse {
   0%, 100% { opacity: 0.4; transform: scale(0.96); }
   50% { opacity: 1; transform: scale(1); }
+}
+
+/*--------------------------------------------------------------
+# Mobile & tablet (Android / iPhone)
+--------------------------------------------------------------*/
+
+/* Stop sideways scrolling caused by AOS slide-ins, blobs and rotated images */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@supports (overflow-x: clip) {
+  html,
+  body {
+    overflow-x: clip;
+  }
+}
+
+a,
+button,
+.portfolio-filters li,
+.mobile-nav-toggle {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* iOS Safari: 100vh includes the hidden toolbar, svh does not */
+@supports (min-height: 100svh) {
+  .hero {
+    min-height: 100svh;
+  }
+}
+
+/* A backdrop-filter on the header traps the fixed mobile menu inside the
+   header bar, so drop it while the menu is open */
+.mobile-nav-active .header {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+@media (max-width: 1199px) {
+  .mobile-nav-toggle {
+    font-size: 30px;
+    padding: 4px;
+  }
+
+  .navmenu a,
+  .navmenu a:focus {
+    padding: 13px 22px;
+  }
+}
+
+/* Touch screens have no hover: show portfolio captions, skip sticky hover effects */
+@media (hover: none) {
+  .portfolio .portfolio-item .portfolio-info {
+    opacity: 1;
+    transform: none;
+  }
+
+  .portfolio-card:hover img {
+    transform: none;
+  }
+
+  .tilt:hover {
+    box-shadow: var(--shadow-sm);
+    border-color: var(--line);
+  }
+
+  .tilt:hover::after {
+    opacity: 0;
+  }
+
+  .why-item:hover {
+    transform: none;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .about-visual img {
+    transform: none;
+  }
+}
+
+/* Tablets */
+@media (max-width: 991px) {
+  .section {
+    padding: 80px 0;
+  }
+
+  .process {
+    padding-top: 0;
+  }
+
+  .cta {
+    padding: 0;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 130px 0 80px;
+  }
+
+  .title-block {
+    margin-bottom: 40px;
+  }
+
+  .orbit-scene {
+    height: 480px;
+  }
+}
+
+/* Phones */
+@media (max-width: 575px) {
+  .section {
+    padding: 60px 0;
+    scroll-margin-top: 68px;
+  }
+
+  .process {
+    padding-top: 0;
+    margin-top: -20px;
+  }
+
+  .cta {
+    padding: 0;
+  }
+
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  /* Header */
+  .header,
+  .scrolled .header {
+    padding: 10px 0;
+  }
+
+  .header .logo img {
+    height: 36px;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 100px 0 50px;
+  }
+
+  .eyebrow {
+    font-size: 13px;
+    padding: 7px 14px;
+    margin-bottom: 18px;
+  }
+
+  .hero h1 {
+    font-size: clamp(30px, 8.6vw, 38px);
+    margin-bottom: 16px;
+  }
+
+  .hero p.lead {
+    font-size: 16px;
+    line-height: 1.65;
+    margin-bottom: 26px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .hero-actions a {
+    justify-content: center;
+  }
+
+  .hero-trust {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 32px;
+    padding-top: 22px;
+  }
+
+  .hero-trust strong {
+    font-size: 22px;
+  }
+
+  .hero-trust span {
+    display: block;
+    font-size: 12px;
+    line-height: 1.3;
+  }
+
+  .blob-1 { width: 280px; height: 280px; }
+  .blob-2 { width: 240px; height: 240px; }
+  .blob-3 { width: 200px; height: 200px; }
+
+  .orbit-scene {
+    height: 360px;
+  }
+
+  /* Titles */
+  .title-block {
+    margin-bottom: 32px;
+  }
+
+  .title-block p {
+    font-size: 15px;
+  }
+
+  .section-kicker {
+    font-size: 12px;
+  }
+
+  .section-heading {
+    font-size: clamp(24px, 7vw, 30px);
+  }
+
+  /* Cards */
+  .step-card,
+  .why-item {
+    padding: 24px 20px;
+  }
+
+  .service-card {
+    padding: 24px 20px;
+  }
+
+  .service-card h3 {
+    font-size: 18px;
+    margin: 16px 0 8px;
+  }
+
+  .skill-card {
+    padding: 18px 14px;
+    border-radius: 18px;
+  }
+
+  .skill-card .chip {
+    width: 46px;
+    height: 46px;
+    font-size: 21px;
+    border-radius: 14px;
+  }
+
+  .skill-card h4 {
+    font-size: 14px;
+    line-height: 1.35;
+    margin: 14px 0 12px;
+    min-height: 2.7em;
+  }
+
+  .skill-card em {
+    font-size: 13px;
+  }
+
+  /* About */
+  .about-badge {
+    left: 12px;
+    bottom: 12px;
+    padding: 12px 14px;
+    gap: 10px;
+  }
+
+  .about-badge i {
+    font-size: 24px;
+  }
+
+  .about p {
+    font-size: 15px;
+  }
+
+  .stat-card {
+    padding: 16px 14px;
+  }
+
+  .stat-card span,
+  .stat-card b {
+    font-size: 26px;
+  }
+
+  .stat-card p {
+    font-size: 13px;
+  }
+
+  /* Portfolio */
+  .portfolio .portfolio-filters {
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .portfolio .portfolio-filters li {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+
+  .portfolio .portfolio-item .portfolio-info {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    padding: 12px 16px;
+  }
+
+  .portfolio .portfolio-item:hover .portfolio-info {
+    bottom: 12px;
+  }
+
+  .portfolio .portfolio-item .portfolio-info h4 {
+    font-size: 15px;
+  }
+
+  .portfolio .portfolio-item .portfolio-info .preview-link {
+    right: 14px;
+    width: 38px;
+    height: 38px;
+    top: calc(50% - 19px);
+  }
+
+  /* Reviews */
+  .review-card {
+    padding: 26px 22px 22px;
+  }
+
+  .testimonials .swiper {
+    padding-bottom: 46px;
+  }
+
+  /* CTA */
+  .cta-box {
+    padding: 36px 22px;
+    border-radius: 24px;
+  }
+
+  .cta-box p {
+    font-size: 15px;
+  }
+
+  .cta-box .btn-light-x {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Contact */
+  .contact-info,
+  .contact .contact-form {
+    padding: 24px 18px;
+  }
+
+  .info-row {
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+
+  .info-row .chip {
+    width: 44px;
+    height: 44px;
+    font-size: 19px;
+    border-radius: 14px;
+  }
+
+  .info-row p {
+    overflow-wrap: anywhere;
+  }
+
+  .contact .php-email-form button[type=submit] {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Footer */
+  .footer {
+    padding-top: 50px;
+  }
+
+  .footer .copyright {
+    margin-top: 36px;
+    padding: 20px 0;
+  }
+
+  .footer-contact p {
+    overflow-wrap: anywhere;
+  }
+
+  .footer .footer-links ul li {
+    line-height: 1.4;
+  }
+}
+
+/* iPhone zooms into inputs with a font smaller than 16px; keep them at 16px */
+@media (max-width: 991px) {
+  .contact .php-email-form input[type=text],
+  .contact .php-email-form input[type=email],
+  .contact .php-email-form input[type=tel],
+  .contact .php-email-form textarea {
+    font-size: 16px;
+  }
+}
+
+/* Very small phones (iPhone SE 1st gen, small Androids) */
+@media (max-width: 360px) {
+  .hero-trust strong {
+    font-size: 19px;
+  }
+
+  .hero-trust span {
+    font-size: 11px;
+  }
+
+  .orbit-item small {
+    display: none;
+  }
+}
+
+/* Older Android / iOS browsers without color-mix() */
+@supports not (color: color-mix(in srgb, red, blue)) {
+  .chip {
+    background: #eef3fb;
+  }
+
+  .orbit-item .chip {
+    background: #ffffff;
+    border-color: var(--line);
+    box-shadow: var(--shadow-md), inset 0 2px 0 #ffffff;
+  }
+
+  .skill-card .progress-value {
+    background: var(--c);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
